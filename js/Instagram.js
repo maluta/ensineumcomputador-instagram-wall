@@ -136,7 +136,7 @@ Instagram = {
 		}
 	}
 }
-/*
+
 window.requestAnimFrame = (function(callback){
     return window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
@@ -147,4 +147,3 @@ window.requestAnimFrame = (function(callback){
         window.setTimeout(callback, 1000 / 60);
  	};
 })();
-*/
