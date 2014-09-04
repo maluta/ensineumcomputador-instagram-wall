@@ -19,7 +19,7 @@ form, fieldset {
 	border: 0;
 	outline: none;
   top: -700px;
-  left: 350px;
+  left: 390px;
 }
 big {
 	font: 12px Arial; s
@@ -73,6 +73,7 @@ h1 {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
+  margin-left: 50px;
 
 }
 h1 span {
