@@ -9,8 +9,8 @@ INICIO GERAL
 @font-face{ font-family: "PFHandbookPro-Thin"; src: url('font/PFHandbookPro-Thin.ttf'); font-weight:700; font-style:thin; }
 
 
-body, h1, h2, h3, h4, h5, h6,
-div, span, object, iframe, img, p, blockquote,
+body, h2, h3, h4, h5, h6,
+div, object, iframe, img, p, blockquote,
 ul, li, ol, dl, dd, dt,
 table, thead, tbody, tfoot, tr, td, th,
 form, fieldset {
@@ -18,6 +18,8 @@ form, fieldset {
 	padding: 0;
 	border: 0;
 	outline: none;
+  top: -700px;
+  left: 350px;
 }
 big {
 	font: 12px Arial; s
@@ -36,6 +38,8 @@ ul {
 	clear: both;
 }
 body { margin: 0px; background: #4cf096; height: 100%; text-align:center; }
+
+
 /*#########
 FIM GERAL
 #########*/
@@ -58,31 +62,30 @@ h1 {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	text-align: left;*/
-	position: fixed;
-	left: 0;
-	top: 0;
+
+	left: 10px;
 	z-index: 100;
 	background: #f5091e;
-	width:168px;
-	height: 255px;
-	background: url(img/logo-olhaobrasil2.png) no-repeat;
-	text-indent: 200%;
+	width:355px;
+	height: 700px;
+	background: url(img/Logo.png) no-repeat;
+  background-size:350px;
+	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 
 }
 h1 span {
-	background: url(img/logo-olhaobrasil.png) no-repeat;
+	background: url(img/Texto.png) no-repeat;
 	display: block;
-	width: 119px;
-	height: 32px;
-	float: left;
-	margin: -7px 0 0 0;
-	vertical-align: middle;
-	text-indent: -5555px;
-	display: none;
+	width: 200px;
+	height: 400px;
+	float: right;
+	margin: 250px 0 0 0;
+  background-size:200px;
 }
 h2 {
+  background: url(img/Texto.png) no-repeat;
 	position: fixed;
 	left: 0px;
 	top: 45px;
@@ -126,8 +129,6 @@ h2 {
 .title-word.praia { background-image: url(img/praia.gif); }
 .title-word.livro { background-image: url(img/livro.gif); }*/
 
-
-
 .title-word span {
 	position: absolute;
 	left: 0;
@@ -148,7 +149,7 @@ h2 {
 /*	float: left;*/
 	position: relative;
 	display: inline-block;
-	#display: inline;
+	/*display: inline;*/
 	zoom: 1;
 	margin: 4px;
 	padding: 0;
