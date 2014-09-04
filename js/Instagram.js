@@ -24,10 +24,10 @@ Instagram = {
 	marginTop : 0,
 	flgFirstMove : 1,
 	time: 1000,
-	tags : ['tecnologia','ensinar','computador','codigofonte','codificar','ensineumcomputador','programae','programaê','aprendizado','scratch'],
-  tagsMinIds : [0,0,0,0,0,0,0,0,0,0],
-	backgrounds : ['red','blue','green','orange','yellow'],
-	tagsFullName : ['Tecnologia','Ensinar','Computador','Código-Fonte','Codificar','ensineumcomputador','Programaê','Programaê','Aprendizado','Scratch'],
+	tags : ['EnsineUmComputador'],
+  tagsMinIds : [0],
+	backgrounds : ['green'],
+	tagsFullName : ['EnsineUmComputador'],
 	backgroundsClasses : ['programae'],
 	row:0,
 	imageWidth: 306,
@@ -46,7 +46,7 @@ Instagram = {
 	},
 
 	getImages : function(){
-		var index = Math.floor((Math.random()*Instagram.tags.length-1)+1);
+		var index = 0 //Math.floor((Math.random()*Instagram.tags.length-1)+1);
 
 		var indexColor = Math.floor((Math.random()*4)+1);
 		var color = Instagram.backgrounds[indexColor];
@@ -57,7 +57,8 @@ Instagram = {
 			dataType: "jsonp",
 			cache: false,
 			url: "https://api.instagram.com/v1/tags/" + search + "/media/recent",
-			data:{client_id:'8e530b8c64e9419586f87d5e8eb63f03',min_tag_id:Instagram.idImage},
+			//data:{client_id:'8e530b8c64e9419586f87d5e8eb63f03',min_tag_id:Instagram.idImage},
+			data:{client_id:'7abafb2a37594e7bb4f1cd6f4d3e1232',min_tag_id:Instagram.idImage},
 			success : function(json){
 				if(json.data.length==0){
 					Instagram.getImages();
@@ -135,6 +136,7 @@ Instagram = {
 		}
 	}
 }
+
 window.requestAnimFrame = (function(callback){
     return window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
